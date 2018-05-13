@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="baseap" prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeElementController">
+   <children>
+      <Button layoutX="157.0" layoutY="194.0" mnemonicParsing="false" onAction="#setTodaysRate" prefHeight="54.0" prefWidth="217.0" text="Today's Rate">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="157.0" layoutY="294.0" mnemonicParsing="false" onAction="#productDetails" prefHeight="54.0" prefWidth="217.0" text="Product Details">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="157.0" layoutY="383.0" mnemonicParsing="false" onAction="#generateBill" prefHeight="54.0" prefWidth="217.0" text="Invoice">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="157.0" layoutY="473.0" mnemonicParsing="false" onAction="#getQuotation" prefHeight="54.0" prefWidth="217.0" text="Quotation" />
+      <TableView fx:id="table" layoutX="606.0" layoutY="207.0" prefHeight="260.0" prefWidth="401.0">
+        <columns>
+          <TableColumn fx:id="metal" prefWidth="208.0" text="Metal" />
+          <TableColumn fx:id="rate" prefWidth="191.0" text="Rate" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="270.0" fitWidth="500.0" layoutX="507.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../application/mj.png"/>
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <Reflection />
+   </effect>
+</AnchorPane>

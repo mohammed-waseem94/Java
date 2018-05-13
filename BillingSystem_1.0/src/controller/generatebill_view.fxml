@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GenerateBillController">
+   <children>
+      <Label layoutX="677.0" layoutY="38.0" text="Invoice">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="82.0" text="Product Details:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="productid" layoutX="378.0" layoutY="134.0" prefHeight="50.0" prefWidth="178.0" promptText="product id" />
+      <TextField fx:id="description" layoutX="378.0" layoutY="247.0" prefHeight="54.0" prefWidth="476.0" promptText="description" />
+      <TextField fx:id="material" layoutX="999.0" layoutY="247.0" prefHeight="54.0" prefWidth="203.0" promptText="material" />
+      <TextField fx:id="net_wt" layoutX="378.0" layoutY="322.0" prefHeight="31.0" prefWidth="147.0" promptText="net wt." />
+      <TextField fx:id="stone_wt" layoutX="713.0" layoutY="322.0" prefHeight="50.0" prefWidth="147.0" promptText="stone wt" />
+      <TextField fx:id="carat" layoutX="999.0" layoutY="322.0" prefHeight="54.0" prefWidth="203.0" promptText="carat" />
+      <TextField fx:id="wastage" layoutX="378.0" layoutY="400.0" prefHeight="50.0" prefWidth="147.0" promptText="wastage" />
+      <TextField fx:id="making" layoutX="713.0" layoutY="400.0" prefHeight="50.0" prefWidth="147.0" promptText="making" />
+      <TextField fx:id="price" layoutX="1005.0" layoutY="398.0" prefHeight="54.0" prefWidth="203.0" promptText="price" />
+      <Button layoutX="693.0" layoutY="490.0" mnemonicParsing="false" onAction="#addToBill" text="Add">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <TextField fx:id="totamnt" layoutX="312.0" layoutY="787.0" promptText="tota amount" />
+      <TextField fx:id="discount" layoutX="766.0" layoutY="787.0" prefHeight="50.0" prefWidth="211.0" promptText="discount" />
+      <Button layoutX="1012.0" layoutY="787.0" mnemonicParsing="false" onAction="#generateBill" text="Generate Bill">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="134.0" layoutY="564.0" prefHeight="200.0" prefWidth="1202.0">
+        <columns>
+	        <TableColumn fx:id="sno" prefWidth="74.00006103515625" text="S No." />
+    	    <TableColumn fx:id="name" prefWidth="362.0" text="Description" />
+            <TableColumn fx:id="pcs" prefWidth="75.0" text="Pcs" />
+            <TableColumn fx:id="crt" prefWidth="106.0" text="Carat" />
+            <TableColumn fx:id="mwt" prefWidth="143.0" text="Net Wt." />
+            <TableColumn fx:id="swt" prefWidth="159.0" text="Stone Wt." />
+            <TableColumn fx:id="wstg" prefWidth="137.0" text="Wastage" />
+            <TableColumn fx:id="prc" prefWidth="149.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="824.0" layoutY="490.0" mnemonicParsing="false" onAction="#clearDetails" text="Clear">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Button layoutX="1217.0" layoutY="787.0" mnemonicParsing="false" onAction="#clearBill" text="Clear">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="232.0" layoutY="252.0" text="Description" />
+      <Label layoutX="918.0" layoutY="331.0" text="Carat" />
+      <Label layoutX="275.0" layoutY="331.0" text="Net Wt." />
+      <Label layoutX="580.0" layoutY="331.0" text="Stone Wt." />
+      <Label layoutX="921.0" layoutY="407.0" text="Price" />
+      <Label layoutX="260.0" layoutY="407.0" text="Wastage" />
+      <Label layoutX="607.0" layoutY="407.0" text="Making" />
+      <Label layoutX="652.0" layoutY="796.0" text="Discount" />
+      <TextArea fx:id="stonedetails" layoutX="871.0" layoutY="79.0" prefHeight="154.0" prefWidth="378.0" promptText="stone details" />
+      <Label layoutX="709.0" layoutY="143.0" text="Stone Details" />
+      <Label layoutX="212.0" layoutY="146.0" prefHeight="18.0" prefWidth="127.0" text="Product ID" />
+      <Button layoutX="571.0" layoutY="134.0" mnemonicParsing="false" onAction="#getDetails" prefHeight="54.0" prefWidth="90.0" text="Get" />
+      <Label layoutX="166.0" layoutY="796.0" text="Total Amnt" />
+      <Label fx:id="error" layoutX="332.0" layoutY="507.0" textFill="#ff0f0f" />
+      <Label layoutX="882.0" layoutY="256.0" text="Material" />
+    </children>
+</AnchorPane>

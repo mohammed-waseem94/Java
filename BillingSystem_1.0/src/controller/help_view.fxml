@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea editable="false" layoutY="15.0" prefHeight="885.0" prefWidth="1500.0" text="&#10;&#9;-&gt;MySQL Database Connection&#10;&#9;1:Launch MySQL Notifier from start menu &gt; programs.&#10;&#9;2: Right click on MySQL Notifier on taskbar and start MySQL.&#10;&#9;3: Make sure MySQL services is running.&#10;&#10;&#9;-&gt;Product Details&#10;&#9;1: Make sure to tag the product with product id before adding details in database.&#10;&#9;2: Give proper values while entering product details&#10;&#9;&#9;ex. carat cannot be decimal number or string it must be an integer.&#10;&#9;3: Enter correct product id for retreiving product details.&#10;&#10;&#9;-&gt;Todays Rate&#10;&#9;1: Update Gold rates on a daily basis as the price is calculated using stored gold rate.&#10;&#10;&#9;-&gt;Password reset&#10;&#9;1: Use alphanumeric password for better security.&#10;&#9;2: In case you are unable to recollect your password please contact the developer.&#10;&#9;3: Password is encrypted internally.&#10;&#10;&#9;-&gt;For any assistance please mail your queries to abdulwaseem.mohammed@gmail.com.">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

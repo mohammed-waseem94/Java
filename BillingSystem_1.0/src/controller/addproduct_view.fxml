@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddProdController">
+   <children>
+      <Label layoutX="292.0" layoutY="127.0" text="Product ID">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="product_id" layoutX="451.0" layoutY="118.0" promptText="product id" />
+      <TextField fx:id="barcode" layoutX="978.0" layoutY="118.0" promptText="barcode" />
+      <Label layoutX="813.0" layoutY="123.0" text="Barcode">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="249.0" layoutY="185.0" text="Product Name">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="product_name" layoutX="451.0" layoutY="180.0" promptText="product name" />
+      <Label layoutX="807.0" layoutY="185.0" text="Model No">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="model_no" layoutX="978.0" layoutY="180.0" promptText="model no" />
+      <ChoiceBox fx:id="material" layoutX="448.0" layoutY="240.0" prefHeight="54.0" prefWidth="311.0" />
+      <Label layoutX="320.0" layoutY="245.0" text="Material">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="811.0" layoutY="245.0" text="Category">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="category" layoutX="978.0" layoutY="240.0" promptText="category" />
+      <Label layoutX="356.0" layoutY="313.0" text="Carat">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="carat" layoutX="451.0" layoutY="304.0" promptText="carat" />
+      <Label layoutX="811.0" layoutY="309.0" text="Net Wt.">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="net_wt" layoutX="978.0" layoutY="304.0" promptText="net wt" />
+      <Label layoutX="302.0" layoutY="376.0" text="Stone Wt.">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <TextField fx:id="stone_wt" layoutX="450.0" layoutY="371.0" promptText="stone wt" />
+      <TextField fx:id="gross_wt" layoutX="978.0" layoutY="367.0" promptText="gross wt" />
+      <TextField fx:id="making" layoutX="451.0" layoutY="437.0" promptText="making" />
+      <TextField fx:id="wastage" layoutX="978.0" layoutY="433.0" promptText="wastage" />
+      <TextArea fx:id="stonedetails" layoutX="621.0" layoutY="514.0" prefHeight="131.0" prefWidth="440.0" />
+      <Label layoutX="811.0" layoutY="376.0" text="Gross wt.">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="325.0" layoutY="442.0" text="Making">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="811.0" layoutY="442.0" text="Wastage">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Button layoutX="683.0" layoutY="728.0" mnemonicParsing="false" onAction="#addNewProd" text="Insert">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="681.0" layoutY="38.0" text="Add New Product" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="830.0" layoutY="728.0" mnemonicParsing="false" onAction="#clearAll" text="Clear">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="450.0" layoutY="562.0" text="Stone Details" />
+      <Label fx:id="error" layoutX="510.0" layoutY="687.0" textFill="#ff0f0f" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DBSetupController">
+   <children>
+      <TitledPane animated="false" layoutX="411.0" layoutY="158.0" text="Database Setup">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <PasswordField fx:id="curdbpwd" layoutX="311.0" layoutY="53.0" prefHeight="31.0" prefWidth="260.0" />
+                  <TextField fx:id="newdbaddr" layoutX="311.0" layoutY="120.0" prefHeight="31.0" prefWidth="260.0" />
+                  <TextField fx:id="newdbusername" layoutX="311.0" layoutY="189.0" prefHeight="31.0" prefWidth="260.0" />
+                  <PasswordField fx:id="newdbpwd" layoutX="311.0" layoutY="257.0" prefHeight="31.0" prefWidth="260.0" />
+                  <Label layoutX="37.0" layoutY="62.0" text="Current DB Password">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="129.0" text="New DB Address">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="197.0" text="New DB Username">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="71.0" layoutY="266.0" text="New DB Password">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="257.0" layoutY="351.0" mnemonicParsing="false" onAction="#dbSetup" text="Submit">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="output" layoutX="46.0" layoutY="17.0" prefHeight="36.0" prefWidth="560.0" textFill="RED">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

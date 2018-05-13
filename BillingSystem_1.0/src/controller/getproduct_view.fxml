@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GetProdController">
+   <children>
+      <Label layoutX="413.0" layoutY="96.0" text="Product ID" />
+      <TextField fx:id="product_id" layoutX="561.0" layoutY="87.0" promptText="product id" />
+      <Button layoutX="886.0" layoutY="87.0" mnemonicParsing="false" onAction="#getProductDetails" text="Get Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="125.0" layoutY="169.0" text="Product Name" />
+      <TextField fx:id="product_name" editable="false" layoutX="322.0" layoutY="160.0" promptText="product name" />
+      <Label layoutX="730.0" layoutY="169.0" text="Model No" />
+      <TextField fx:id="model_no" editable="false" layoutX="874.0" layoutY="160.0" promptText="model no" />
+      <Label layoutX="198.0" layoutY="238.0" text="Material" />
+      <TextField fx:id="material" editable="false" layoutX="321.0" layoutY="229.0" promptText="material" />
+      <Label layoutX="738.0" layoutY="234.0" text="Category" />
+      <TextField fx:id="category" editable="false" layoutX="874.0" layoutY="225.0" promptText="category" />
+      <Label layoutX="232.0" layoutY="298.0" text="Carat" />
+      <TextField fx:id="carat" editable="false" layoutX="321.0" layoutY="293.0" promptText="carat" />
+      <Label layoutX="754.0" layoutY="302.0" text="Net Wt." />
+      <TextField fx:id="net_wt" editable="false" layoutX="874.0" layoutY="289.0" promptText="net wt" />
+      <Label layoutX="180.0" layoutY="369.0" text="Stone Wt." />
+      <TextField fx:id="stone_wt" editable="false" layoutX="321.0" layoutY="360.0" promptText="stone wt" />
+      <TextField fx:id="gross_wt" editable="false" layoutX="874.0" layoutY="356.0" promptText="gross wt" />
+      <TextField fx:id="making" editable="false" layoutX="322.0" layoutY="426.0" promptText="making" />
+      <TextField fx:id="wastage" editable="false" layoutX="874.0" layoutY="422.0" promptText="wastage" />
+      <Label layoutX="745.0" layoutY="365.0" text="Gross wt." />
+      <Label layoutX="203.0" layoutY="431.0" text="Making" />
+      <Label layoutX="749.0" layoutY="431.0" text="Wastage" />
+      <Label layoutX="582.0" layoutY="26.0" text="Get Product Details">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="628.0" layoutY="511.0" mnemonicParsing="false" onAction="#add2Bill" text="Add">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="166.0" layoutY="591.0" prefHeight="190.0" prefWidth="1129.0">
+        <columns>
+            <TableColumn fx:id="sno" prefWidth="75.0" text="S No." />
+            <TableColumn fx:id="name" prefWidth="291.0" text="Name" />
+            <TableColumn fx:id="pcs" prefWidth="75.0" text="Pcs" />
+            <TableColumn fx:id="crt" prefWidth="84.0" text="Carat" />
+            <TableColumn fx:id="mwt" prefWidth="139.0" text="Net Wt." />
+            <TableColumn fx:id="swt" prefWidth="137.0" text="Stone Wt" />
+            <TableColumn fx:id="wstg" prefWidth="145.0" text="Wastage" />
+            <TableColumn fx:id="prc" prefWidth="179.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="742.0" layoutY="511.0" mnemonicParsing="false" onAction="#clearProdDetails" text="clear">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Button layoutX="986.0" layoutY="800.0" mnemonicParsing="false" onAction="#generateBill" text="Generate Bill">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Button layoutX="1185.0" layoutY="800.0" mnemonicParsing="false" onAction="#clearBill" text="Clear">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="159.0" layoutY="809.0" text="Total Amnt" />
+      <TextField fx:id="totamnt" layoutX="315.0" layoutY="800.0" prefHeight="54.0" prefWidth="242.0" promptText="total amount" />
+      <TextField fx:id="discount" layoutX="734.0" layoutY="800.0" prefHeight="54.0" prefWidth="229.0" promptText="discount" />
+      <Label layoutX="612.0" layoutY="809.0" text="Discount" />
+      <Label fx:id="error" layoutX="178.0" layoutY="520.0" textFill="#ff0f0f" />
+   </children>
+</AnchorPane>
